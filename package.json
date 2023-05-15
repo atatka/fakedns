@@ -1,0 +1,28 @@
+{
+  "name": "fakedns",
+  "version": "1.0.0",
+  "description": "This project, designed for Tailscale, provides a DNS server that reads labels from Docker Compose configurations and resolves DNS requests based on these labels.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atatka/fakends.git"
+  },
+  "author": "atatka",
+  "bugs": {
+    "url": "https://github.com/atatka/fakends/issues"
+  },
+  "homepage": "https://github.com/atatka/fakends#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  },
+  "dependencies": {
+    "dns-packet": "^5.6.0",
+    "dockerode": "^3.3.5",
+    "node-cron": "^3.0.2"
+  }
+}
