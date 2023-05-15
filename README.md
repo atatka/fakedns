@@ -43,7 +43,7 @@ version: "3.7"
 services:
   fakedns:
     container_name: fakedns
-    image: ghcr.io/atatka/fakedns
+    image: ghcr.io/atatka/fakedns:main
     restart: unless-stopped
     ports:
        - 100.127.46.189:53:5353/udp # dns
@@ -56,7 +56,7 @@ services:
 ### docker cli
 
 ```
-docker run --name fakedns -v /var/run/docker.sock:/var/run/docker.sock -p 100.127.46.189:53:5353/udp -d ghcr.io/atatka/fakedns
+docker run --name fakedns -v /var/run/docker.sock:/var/run/docker.sock -p 100.127.46.189:53:5353/udp -d ghcr.io/atatka/fakedns:main
 ```
 
 ## Acknowledgments
